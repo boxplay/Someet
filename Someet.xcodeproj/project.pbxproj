@@ -14,6 +14,12 @@
 		584EE59020073C90001FA787 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 584EE58E20073C90001FA787 /* LaunchScreen.storyboard */; };
 		584EE59B20073C90001FA787 /* SomeetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584EE59A20073C90001FA787 /* SomeetTests.swift */; };
 		584EE5A620073C90001FA787 /* SomeetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584EE5A520073C90001FA787 /* SomeetUITests.swift */; };
+		58B5EB01200784890095925B /* NTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B5EB00200784890095925B /* NTViewController.swift */; };
+		58B5EB06200879D60095925B /* BarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B5EB05200879D60095925B /* BarViewController.swift */; };
+		58B5EB082008A1A10095925B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B5EB072008A1A10095925B /* MapViewController.swift */; };
+		58E669B520073D1A00C6E943 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E669B420073D1A00C6E943 /* FirstViewController.swift */; };
+		58E669CC200746B900C6E943 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58E669C9200746AF00C6E943 /* SnapKit.framework */; };
+		58E669CD200746B900C6E943 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 58E669C9200746AF00C6E943 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +37,42 @@
 			remoteGlobalIDString = 584EE58120073C8F001FA787;
 			remoteInfo = Someet;
 		};
+		58E669C8200746AF00C6E943 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58E669C3200746AF00C6E943 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9D819CC627D0083B827;
+			remoteInfo = SnapKit;
+		};
+		58E669CA200746AF00C6E943 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58E669C3200746AF00C6E943 /* SnapKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
+			remoteInfo = "SnapKit Tests";
+		};
+		58E669CE200746B900C6E943 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58E669C3200746AF00C6E943 /* SnapKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = EEBCC9D719CC627D0083B827;
+			remoteInfo = SnapKit;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		58E669B320073D0700C6E943 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				58E669CD200746B900C6E943 /* SnapKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		584EE58220073C90001FA787 /* Someet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Someet.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +88,11 @@
 		584EE5A120073C90001FA787 /* SomeetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SomeetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		584EE5A520073C90001FA787 /* SomeetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeetUITests.swift; sourceTree = "<group>"; };
 		584EE5A720073C90001FA787 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58B5EB00200784890095925B /* NTViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTViewController.swift; path = ../NTViewController.swift; sourceTree = "<group>"; };
+		58B5EB05200879D60095925B /* BarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarViewController.swift; sourceTree = "<group>"; };
+		58B5EB072008A1A10095925B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		58E669B420073D1A00C6E943 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		58E669C3200746AF00C6E943 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = ../Carthage/Checkouts/SnapKit/SnapKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58E669CC200746B900C6E943 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +124,7 @@
 		584EE57920073C8F001FA787 = {
 			isa = PBXGroup;
 			children = (
+				58E669C3200746AF00C6E943 /* SnapKit.xcodeproj */,
 				584EE58420073C90001FA787 /* Someet */,
 				584EE59920073C90001FA787 /* SomeetTests */,
 				584EE5A420073C90001FA787 /* SomeetUITests */,
@@ -97,12 +145,16 @@
 		584EE58420073C90001FA787 /* Someet */ = {
 			isa = PBXGroup;
 			children = (
+				58B5EB00200784890095925B /* NTViewController.swift */,
 				584EE58520073C90001FA787 /* AppDelegate.swift */,
 				584EE58720073C90001FA787 /* ViewController.swift */,
 				584EE58920073C90001FA787 /* Main.storyboard */,
 				584EE58C20073C90001FA787 /* Assets.xcassets */,
 				584EE58E20073C90001FA787 /* LaunchScreen.storyboard */,
 				584EE59120073C90001FA787 /* Info.plist */,
+				58E669B420073D1A00C6E943 /* FirstViewController.swift */,
+				58B5EB05200879D60095925B /* BarViewController.swift */,
+				58B5EB072008A1A10095925B /* MapViewController.swift */,
 			);
 			path = Someet;
 			sourceTree = "<group>";
@@ -125,6 +177,15 @@
 			path = SomeetUITests;
 			sourceTree = "<group>";
 		};
+		58E669C4200746AF00C6E943 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58E669C9200746AF00C6E943 /* SnapKit.framework */,
+				58E669CB200746AF00C6E943 /* SnapKit Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +196,12 @@
 				584EE57E20073C8F001FA787 /* Sources */,
 				584EE57F20073C8F001FA787 /* Frameworks */,
 				584EE58020073C8F001FA787 /* Resources */,
+				58E669B320073D0700C6E943 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				58E669CF200746B900C6E943 /* PBXTargetDependency */,
 			);
 			name = Someet;
 			productName = Someet;
@@ -221,6 +284,12 @@
 			mainGroup = 584EE57920073C8F001FA787;
 			productRefGroup = 584EE58320073C90001FA787 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 58E669C4200746AF00C6E943 /* Products */;
+					ProjectRef = 58E669C3200746AF00C6E943 /* SnapKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				584EE58120073C8F001FA787 /* Someet */,
@@ -229,6 +298,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		58E669C9200746AF00C6E943 /* SnapKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SnapKit.framework;
+			remoteRef = 58E669C8200746AF00C6E943 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		58E669CB200746AF00C6E943 /* SnapKit Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SnapKit Tests.xctest";
+			remoteRef = 58E669CA200746AF00C6E943 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		584EE58020073C8F001FA787 /* Resources */ = {
@@ -262,7 +348,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58E669B520073D1A00C6E943 /* FirstViewController.swift in Sources */,
+				58B5EB082008A1A10095925B /* MapViewController.swift in Sources */,
+				58B5EB06200879D60095925B /* BarViewController.swift in Sources */,
 				584EE58820073C90001FA787 /* ViewController.swift in Sources */,
+				58B5EB01200784890095925B /* NTViewController.swift in Sources */,
 				584EE58620073C90001FA787 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +385,11 @@
 			isa = PBXTargetDependency;
 			target = 584EE58120073C8F001FA787 /* Someet */;
 			targetProxy = 584EE5A220073C90001FA787 /* PBXContainerItemProxy */;
+		};
+		58E669CF200746B900C6E943 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			targetProxy = 58E669CE200746B900C6E943 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -412,6 +507,7 @@
 		584EE5AB20073C90001FA787 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F9Z9W45949;
 				INFOPLIST_FILE = Someet/Info.plist;
@@ -425,6 +521,7 @@
 		584EE5AC20073C90001FA787 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F9Z9W45949;
 				INFOPLIST_FILE = Someet/Info.plist;
@@ -512,6 +609,7 @@
 				584EE5AC20073C90001FA787 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		584EE5AD20073C90001FA787 /* Build configuration list for PBXNativeTarget "SomeetTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +618,7 @@
 				584EE5AF20073C90001FA787 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		584EE5B020073C90001FA787 /* Build configuration list for PBXNativeTarget "SomeetUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +627,7 @@
 				584EE5B220073C90001FA787 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
