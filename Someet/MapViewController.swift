@@ -12,8 +12,8 @@ class MapViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "地图页"
-        self.view.backgroundColor = UIColor.red
+//        self.title = "地图页"
+        self.view.backgroundColor = UIColor.black
         self.createNav(title:"地图页")
         // Do any additional setup after loading the view.
     }

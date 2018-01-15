@@ -21,6 +21,10 @@ extension UIViewController {
         titleLabel.text = title
         titleLabel.textColor = UIColor.white
         
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(click_event))
+        titleLabel.addGestureRecognizer(tap)
+        //设置能否与用户进行交互 默认是NO
+        titleLabel.isUserInteractionEnabled = true
         let navItem = UINavigationItem()
         navItem.titleView = titleLabel
         
@@ -39,5 +43,12 @@ extension UIViewController {
         self.view.addSubview(navBar)
     }
    
+    func click_event()
+    {
+        let Fview = FirstViewController()
+//        Fview.viewController = self
+        self.present(Fview,animated: true,completion: nil)
+        
+    }
 
 }

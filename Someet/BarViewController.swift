@@ -13,7 +13,7 @@ class BarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //创建首页的导航控制器
-        let index = FirstViewController()
+        let index = ActivityItemController()
         //let indexNav = UINavigationController(rootViewController:index)
         index.tabBarItem.title = "活动"
         let map = MapViewController()

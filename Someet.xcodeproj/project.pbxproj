@@ -17,6 +17,9 @@
 		58B5EB01200784890095925B /* NTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B5EB00200784890095925B /* NTViewController.swift */; };
 		58B5EB06200879D60095925B /* BarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B5EB05200879D60095925B /* BarViewController.swift */; };
 		58B5EB082008A1A10095925B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B5EB072008A1A10095925B /* MapViewController.swift */; };
+		58B5EB0E200CA9010095925B /* ActivityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B5EB0D200CA9010095925B /* ActivityCollectionViewCell.swift */; };
+		58B5EB10200CAA870095925B /* ActivityItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B5EB0F200CAA870095925B /* ActivityItemController.swift */; };
+		58B5EB13200CDC030095925B /* ActivityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B5EB12200CDC030095925B /* ActivityModel.swift */; };
 		58E669B520073D1A00C6E943 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E669B420073D1A00C6E943 /* FirstViewController.swift */; };
 		58E669CC200746B900C6E943 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58E669C9200746AF00C6E943 /* SnapKit.framework */; };
 		58E669CD200746B900C6E943 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 58E669C9200746AF00C6E943 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -91,6 +94,9 @@
 		58B5EB00200784890095925B /* NTViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NTViewController.swift; path = ../NTViewController.swift; sourceTree = "<group>"; };
 		58B5EB05200879D60095925B /* BarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarViewController.swift; sourceTree = "<group>"; };
 		58B5EB072008A1A10095925B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		58B5EB0D200CA9010095925B /* ActivityCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityCollectionViewCell.swift; sourceTree = "<group>"; };
+		58B5EB0F200CAA870095925B /* ActivityItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityItemController.swift; sourceTree = "<group>"; };
+		58B5EB12200CDC030095925B /* ActivityModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityModel.swift; sourceTree = "<group>"; };
 		58E669B420073D1A00C6E943 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		58E669C3200746AF00C6E943 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = ../Carthage/Checkouts/SnapKit/SnapKit.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +161,9 @@
 				58E669B420073D1A00C6E943 /* FirstViewController.swift */,
 				58B5EB05200879D60095925B /* BarViewController.swift */,
 				58B5EB072008A1A10095925B /* MapViewController.swift */,
+				58B5EB0D200CA9010095925B /* ActivityCollectionViewCell.swift */,
+				58B5EB0F200CAA870095925B /* ActivityItemController.swift */,
+				58B5EB12200CDC030095925B /* ActivityModel.swift */,
 			);
 			path = Someet;
 			sourceTree = "<group>";
@@ -348,12 +357,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58B5EB0E200CA9010095925B /* ActivityCollectionViewCell.swift in Sources */,
 				58E669B520073D1A00C6E943 /* FirstViewController.swift in Sources */,
+				58B5EB13200CDC030095925B /* ActivityModel.swift in Sources */,
 				58B5EB082008A1A10095925B /* MapViewController.swift in Sources */,
 				58B5EB06200879D60095925B /* BarViewController.swift in Sources */,
 				584EE58820073C90001FA787 /* ViewController.swift in Sources */,
 				58B5EB01200784890095925B /* NTViewController.swift in Sources */,
 				584EE58620073C90001FA787 /* AppDelegate.swift in Sources */,
+				58B5EB10200CAA870095925B /* ActivityItemController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

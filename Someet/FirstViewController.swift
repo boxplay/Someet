@@ -10,6 +10,7 @@ import UIKit
 import SnapKit
 
 class FirstViewController: UIViewController {
+    var viewController:ViewController?
     var box = UIView()
     var div = UIView()
     var r = UIView()
@@ -22,7 +23,7 @@ class FirstViewController: UIViewController {
         box.backgroundColor = UIColor.orange
         self.view.addSubview(box)
         box.snp.makeConstraints { (make) in
-            make.width.equalTo(screenw-40)
+            make.width.equalTo(screenw-20)
             make.height.equalTo(300)
             make.center.equalTo(self.view)
 //            make.top.equalTo(64)
@@ -49,7 +50,7 @@ class FirstViewController: UIViewController {
             make.top.equalTo(10)
         }
 //        self.tabBarItem.title = "首页"
-        self.createNav(title:"这是首页")
+//        self.createNav(title:"这是首页")
         // Do any additional setup after loading the view.
     }
 
